@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/hexagons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="global-container">
+        <div class="styles">
+            <div id="square-btn" onclick="activate_square()" class="style active">Square</div>
+            <div id="exagone-btn" onclick="activate_exagone()" class="style">Hexagon</div>
+        </div>
+        <div id="my-grid" class="grid">
+            <div class="elem">
+                <img  draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+    
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+    
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+    
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+    
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+            <div class="elem">
+                <img draggable="true" src="img/blank.png"/>
+            </div>
+    
+        </div>
+        <ul id="hexGrid" style="display: none;">
+            <li class="hex">
+              <div class="hexIn">
+                <div class="hexLink">
+                  <img src="img/blank.png" alt="" />
+                </div>
+              </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                  <div class="hexLink">
+                    <img src="img/blank.png" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <div class="hexLink">
+                    <img src="img/blank.png" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <div class="hexLink">
+                    <img src="img/blank.png" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <div class="hexLink">
+                    <img src="img/blank.png" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <div class="hexLink">
+                    <img src="img/blank.png" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <div class="hexLink">
+                    <img src="img/blank.png" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <div class="hexLink">
+                    <img src="img/blank.png" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <div class="hexLink">
+                    <img src="img/blank.png" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <div class="hexLink">
+                    <img src="img/blank.png" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <div class="hexLink">
+                    <img src="img/blank.png" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <div class="hexLink">
+                    <img src="img/blank.png" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="hex">
+                <div class="hexIn">
+                  <div class="hexLink">
+                    <img src="img/blank.png" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                      <div class="hexLink">
+                        <img src="img/blank.png" alt="" />
+                      </div>
+                    </div>
+                </li>
+    
+                
+        </ul>
+        <div>
+            <button id="save-btn" class="my-btn">Save Image</button>
+            <button id="reset-btn" class="my-btn">Refresh</button>
+            
+        </div>
+        <span>Drag and drop color here.</span>
+        <div class="colors">
+            <div class="color">
+                <div class="tuile">
+                    <img draggable="true" src="img/dark-blue.png" alt="" srcset="">
+                </div>
+                <span>Dark Blue</span>
+            </div>
+            <div class="color">
+                <div class="tuile">
+                    <img draggable="true" src="img/light-blue.png" alt="" srcset="">
+                </div>
+                <span>Light blue</span>
+            </div>
+            <div class="color">
+                <div class="tuile">
+                    <img draggable="true" src="img/dark-green.png" alt="" srcset="">
+                </div>
+                <span>Dark green</span>
+            </div>
+            <div class="color">
+                <div class="tuile">
+                    <img draggable="true" src="img/light-green.png" alt="" srcset="">
+                </div>
+                <span>Light green</span>
+            </div>
+            <div class="color">
+                <div class="tuile">
+                    <img draggable="true" src="img/orange.png" alt="" srcset="">
+                </div>
+                <span>Orange</span>
+            </div>
+            <div class="color">
+                <div class="tuile">
+                    <img draggable="true" src="img/red.png" alt="" srcset="">
+                </div>
+                <span>Red</span>
+            </div>
+            <div class="color">
+                <div class="tuile">
+                    <img draggable="true" src="img/charcoal.png" alt="" srcset="">
+                </div>
+                <span>Charcoal</span>
+            </div>
+            <div class="color">
+                <div class="tuile">
+                    <img draggable="true" src="img/light-grey.png" alt="" srcset="">
+                </div>
+                <span>Light grey</span>
+            </div>
+            <div class="color">
+                <div class="tuile">
+                    <img draggable="true" src="img/black.png" alt="" srcset="">
+                </div>
+                <span>Black</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
