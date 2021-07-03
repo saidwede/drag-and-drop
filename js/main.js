@@ -35,9 +35,13 @@ for(var i = 0; i < tuiles.length; i++){
     tuiles[i].addEventListener("dragstart", dragStart);    
 }
 function saveImage(){
-    hexIns =  document.querySelectorAll('.hexIn');
+    var hexIns =  document.querySelectorAll('.hexIn');
     for(var i = 0; i < hexIns.length; i++){
         hexIns[i].style.visibility = 'visible';    
+    }
+    var hexs =  document.querySelectorAll('.hex');
+    for(var i = 0; i < hexs.length; i++){
+        hexs[i].style.visibility = 'visible';    
     }
     html2canvas(
         document.querySelector(currentStyle),
@@ -55,6 +59,9 @@ function saveImage(){
         link.click();
         for(var i = 0; i < hexIns.length; i++){
             hexIns[i].style.visibility = 'hidden';    
+        }
+        for(var i = 0; i < hexs.length; i++){
+            hexs[i].style.visibility = 'hidden';    
         }
     });
 }
