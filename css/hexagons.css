@@ -26,12 +26,9 @@
 
 .hex {
   position: relative;
+  visibility: hidden;
 }
-.hex::after{
-  content:'';
-  display:block;
-  padding-bottom: 70px;  /* =  100 / tan(60) * 1.5 */
-}
+
 .hexIn{
   position: absolute;
   width:100%;
