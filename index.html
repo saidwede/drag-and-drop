@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/hexagons.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <title>Hush Tiles</title>
 </head>
 <body>
-    <div class="global-container">
+    <header class="toolbar">
+      <img src="img/hush-tiles.png" alt="">
+    </header>
+    <div class="container">
+      <div class="global-container">
         <div class="styles">
             <div id="square-btn" onclick="activate_square()" class="style active">Square</div>
             <div id="exagone-btn" onclick="activate_exagone()" class="style">Hexagon</div>
@@ -171,15 +176,9 @@
             </div>
     
         </div>
-        <ul id="hexGrid" style="display: none;">
-            <li class="hex">
-              <div class="hexIn">
-                <div class="hexLink">
-                  <img src="img/blank.png" alt="" />
-                </div>
-              </div>
-            </li>
-            <li class="hex">
+        <div id="hexgrid-container" style="display: none;">
+          <ul id="hexGrid">
+              <li class="hex">
                 <div class="hexIn">
                   <div class="hexLink">
                     <img src="img/blank.png" alt="" />
@@ -508,9 +507,120 @@
                       </div>
                     </div>
                 </li>
-    
-                
-        </ul>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="hex">
+                  <div class="hexIn">
+                    <div class="hexLink">
+                      <img src="img/blank.png" alt="" />
+                    </div>
+                  </div>
+                </li>  
+          </ul>
+        </div>
         <div>
             <button id="save-btn" class="my-btn">Save Image</button>
             <button id="reset-btn" class="my-btn">Refresh</button>
@@ -573,7 +683,43 @@
                 <span>Black</span>
             </div>
         </div>
+      </div>
     </div>
+    <footer>
+      <div>
+        <img src="img/presto_logo.png" alt="" style="width: 200px; height: auto;">
+        <ul>
+          <li>
+            <a href="https://prestofurniture.com.au/">Home</a>
+          </li>
+          <li>
+            <a href="https://prestofurniture.com.au/products/">Products</a>
+          </li>
+          <li>
+            <a href="https://prestofurniture.com.au/about-us/">About us</a>
+          </li>
+          <li>
+            <a href="https://prestofurniture.com.au/contact/">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div class="f-contact">
+          <div class="img-rd">
+            <img src="img/message-256.png" alt="">
+          </div>
+          <div>
+            sales@prestofurniture.com.a
+          </div>
+        </div>
+        <div class="f-contact">
+          <div class="img-rd">
+            <img src="img/phone-68-256.png" alt="">
+          </div>
+          <div>03 8595 1877</div>
+        </div>
+      </div>
+    </footer>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script src="js/main.js"></script>
 </body>
