@@ -17,7 +17,13 @@
       <div class="global-container">
         <div class="styles">
             <div id="square-btn" onclick="activate_square()" class="style active">Square</div>
-            <div id="exagone-btn" onclick="activate_exagone()" class="style">Hexagon</div>
+            <div id="exagone-btn" class="">
+              <div class="">
+                <div id="exagone-btn-c" onclick="activate_exagone()"  class="">
+                  <span>Hexagon</span>
+                </div>
+              </div>
+            </div>
         </div>
         <div id="my-grid" class="grid">
             <div class="elem">
@@ -626,8 +632,11 @@
             <button id="reset-btn" class="my-btn" style="background-color: brown;">Refresh</button>
             
         </div>
-        <span>Drag and drop color here.</span>
-        <div class="colors">
+        <div style="display: flex; justify-content: flex-end; align-items: center; transform: translateY(-50px);">
+          <img src="img/up-arrow-icon2.png" alt="" style="width: 100px;">
+          <span style="font-weight:bold; font-size: 20px; margin-left: 25px;">Drag and drop!</span>
+        </div>
+        <div class="colors" style="transform: translateY(-40px);">
             <div class="color">
                 <div class="tuile">
                     <img draggable="true" src="img/dark-blue.png" alt="" srcset="">
