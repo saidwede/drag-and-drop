@@ -97,14 +97,14 @@ function allowDrop(event) {
 }
 function activate_square(){
     document.getElementById('square-btn').classList.add("active");
-    document.getElementById('exagone-btn').classList.remove("active");
+    document.getElementById('exagone-btn-c').classList.remove("active");
     document.getElementById('my-grid').style.display = "flex";
     document.getElementById('hexgrid-container').style.display = "none";
     currentStyle = "#my-grid";
 }
 function activate_exagone(){
     document.getElementById('square-btn').classList.remove("active");
-    document.getElementById('exagone-btn').classList.add("active");
+    document.getElementById('exagone-btn-c').classList.add("active");
     document.getElementById('hexgrid-container').style.display = "block";
     document.getElementById('my-grid').style.display = "none";
     currentStyle = "#hexgrid-container";
