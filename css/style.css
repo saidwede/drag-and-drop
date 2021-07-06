@@ -80,7 +80,7 @@ span{
     height: 40px;
     width: 100px;
     border: none;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
     margin-top: 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px #7a7a7a;
@@ -89,7 +89,6 @@ span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
     background-color: #cacaca;
     cursor: pointer;
 }
@@ -101,6 +100,65 @@ span{
     font-size: 14px;
 }
 .style.active{
+    background-color: #205a99;
+    color: #ffffff;
+}
+#square-btn{
+    height: 80px;
+    width: 80px;
+}
+#exagone-btn{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: 70px;
+    margin-left: 10px;
+    
+}
+#exagone-btn > div{
+    position: absolute;
+    width:100%;
+    padding-bottom: 80px; /* =  width / sin(60) */
+    overflow: hidden;
+    background-color: #7a7a7a;
+    outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+    -webkit-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+        -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+            transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+
+}
+#exagone-btn > div * {
+    position: absolute;
+    visibility: visible;
+    outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+}
+#exagone-btn > div > div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cacaca;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    -webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+        -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+            transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+    cursor: pointer;
+}
+#exagone-btn > div > div img {
+    left: -100%;
+    right: -100%;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-transform: rotate3d(0,0,0,0deg);
+        -ms-transform: rotate3d(0,0,0,0deg);
+            transform: rotate3d(0,0,0,0deg);
+    }
+#exagone-btn-c.active{
     background-color: #205a99;
     color: #ffffff;
 }
