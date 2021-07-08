@@ -14,7 +14,7 @@ span{
 }
 .toolbar{
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     background-color: #ffffff;
     width: 100%;
     top: 0px;
@@ -84,6 +84,7 @@ span{
     margin-top: 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px #7a7a7a;
+    cursor: pointer;
 }
 .style{
     display: inline-flex;
@@ -200,4 +201,23 @@ footer ul li a{
 .img-rd img{
     width: 20px;
     height: 20px;
+}
+.action-buttons{
+    position: relative;
+    z-index: 2;
+}
+@media screen and (max-width: 800px) {
+    .grid{
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        width: 100%;
+        border: solid 1px #000000;
+        margin: 0px;
+        padding: 0px;
+    }
+    .elem{
+        width: 10%;
+        height: 10%; 
+    }
 }
