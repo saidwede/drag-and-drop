@@ -206,18 +206,3 @@ footer ul li a{
     position: relative;
     z-index: 2;
 }
-@media screen and (max-width: 800px) {
-    .grid{
-        display: flex;
-        justify-content: start;
-        flex-wrap: wrap;
-        width: 100%;
-        border: solid 1px #000000;
-        margin: 0px;
-        padding: 0px;
-    }
-    .elem{
-        width: 10%;
-        height: 10%; 
-    }
-}
